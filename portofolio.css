@@ -95,7 +95,7 @@ section{
 .home-text{
     padding-top: 60px;
 }
-.home-text h5{
+.home-text h4{
     font-size: 20px;
     font-weight: 500;
 }
@@ -238,10 +238,55 @@ header.sticky{
     transition: all ease 0.5;
 }
 
-.contact ul {
-    font-size: 1 rem; 
-    margin-top: 20px;
-  }
+.contac-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.3 rem;
+}
+
+.contac-form form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color:#fff;
+  color:var(--bg-color);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+form input ::placeholder,
+form textarea ::placeholder {
+  font-size: 15px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .send-btn {
+  display: inline-block;
+  padding: 11px 25px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 300;
+ 
+  width: 30%;
+}
+
+form .send-btn:hover{
+  background:#5f59fd;
+  cursor: pointer;
+}
 
   @media(max-width:1650px){
     header{
